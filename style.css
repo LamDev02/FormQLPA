@@ -44,19 +44,16 @@ table {
 }
 
 #navbar li a {
+  position: relative;
   text-decoration: none;
-  color: #fff;
+  color: lightgray;
   line-height: 46px;
   padding: 0 20px;
   display: block;
   letter-spacing: 0.5px;
 }
 
-#navbar li a:hover {
-  color: lightgray;
-}
-
-#navbar li a:hover:after {
+#navbar li a.active:after {
   width: 100%;
   background-color: rgb(101, 150, 228);
 }
@@ -69,6 +66,15 @@ table {
   left: 0;
   bottom: 2px;
   transition: 0.3s;
+}
+
+#navbar li a:hover {
+  color: lightgray;
+}
+
+#navbar li a:hover:after {
+  width: 100%;
+  background-color: rgb(101, 150, 228);
 }
 
 #navbar li {
